@@ -1,0 +1,164 @@
+[1689796123.890893] [node04:1211721:0]       ib_iface.c:665  UCX  ERROR ibv_create_cq(cqe=4096) failed: Operation not supported
+[1689796123.890893] [node04:1211722:0]       ib_iface.c:665  UCX  ERROR ibv_create_cq(cqe=4096) failed: Operation not supported
+[node04.cluster:1211722] pml_ucx.c:273  Error: Failed to create UCP worker
+[node04.cluster:1211721] pml_ucx.c:273  Error: Failed to create UCP worker
+[1689796123.892226] [node05:1193088:0]       ib_iface.c:665  UCX  ERROR ibv_create_cq(cqe=4096) failed: Operation not supported
+[node05.cluster:1193088] pml_ucx.c:273  Error: Failed to create UCP worker
+[1689796123.901471] [node05:1193089:0]       ib_iface.c:665  UCX  ERROR ibv_create_cq(cqe=4096) failed: Operation not supported
+[node05.cluster:1193089] pml_ucx.c:273  Error: Failed to create UCP worker
+node04.cluster - Parent[1]: Hello
+node04.cluster - Parent [1]: Running command: sh -c 'env -i PATH=/opt/apps/mpi/openmpi-4.0.3_gcc-8.5.0/bin/:/bin mpirun -np 5 ./Child.mpi 100000000'
+node04.cluster - Parent[0]: Hello
+node04.cluster - Parent [0]: Running command: sh -c 'env -i PATH=/opt/apps/mpi/openmpi-4.0.3_gcc-8.5.0/bin/:/bin mpirun -np 5 ./Child.mpi 100000000'
+node05.cluster - Parent[2]: Hello
+node05.cluster - Parent [2]: Running command: sh -c 'env -i PATH=/opt/apps/mpi/openmpi-4.0.3_gcc-8.5.0/bin/:/bin mpirun -np 5 ./Child.mpi 100000000'
+node05.cluster - Parent[3]: Hello
+node05.cluster - Parent [3]: Running command: sh -c 'env -i PATH=/opt/apps/mpi/openmpi-4.0.3_gcc-8.5.0/bin/:/bin mpirun -np 5 ./Child.mpi 100000000'
+[1689796124.016596] [node05:1193109:0]       ib_iface.c:665  UCX  ERROR ibv_create_cq(cqe=4096) failed: Operation not supported
+[1689796124.016949] [node05:1193105:0]       ib_iface.c:665  UCX  ERROR ibv_create_cq(cqe=4096) failed: Operation not supported
+[node05.cluster:1193105] pml_ucx.c:273  Error: Failed to create UCP worker
+[node05.cluster:1193109] pml_ucx.c:273  Error: Failed to create UCP worker
+[1689796124.018956] [node05:1193112:0]       ib_iface.c:665  UCX  ERROR ibv_create_cq(cqe=4096) failed: Operation not supported
+[1689796124.022448] [node04:1211739:0]       ib_iface.c:665  UCX  ERROR ibv_create_cq(cqe=4096) failed: Operation not supported
+[1689796124.021999] [node04:1211741:0]       ib_iface.c:665  UCX  ERROR ibv_create_cq(cqe=4096) failed: Operation not supported
+[1689796124.021906] [node04:1211744:0]       ib_iface.c:665  UCX  ERROR ibv_create_cq(cqe=4096) failed: Operation not supported
+[1689796124.021907] [node04:1211734:0]       ib_iface.c:665  UCX  ERROR ibv_create_cq(cqe=4096) failed: Operation not supported
+[1689796124.021906] [node04:1211740:0]       ib_iface.c:665  UCX  ERROR ibv_create_cq(cqe=4096) failed: Operation not supported
+[1689796124.021999] [node04:1211738:0]       ib_iface.c:665  UCX  ERROR ibv_create_cq(cqe=4096) failed: Operation not supported
+[1689796124.021999] [node04:1211742:0]       ib_iface.c:665  UCX  ERROR ibv_create_cq(cqe=4096) failed: Operation not supported
+[node04.cluster:1211734] pml_ucx.c:273  Error: Failed to create UCP worker
+[node04.cluster:1211740] pml_ucx.c:273  Error: Failed to create UCP worker
+[node04.cluster:1211742] pml_ucx.c:273  Error: Failed to create UCP worker
+[node04.cluster:1211738] pml_ucx.c:273  Error: Failed to create UCP worker
+[node04.cluster:1211744] pml_ucx.c:273  Error: Failed to create UCP worker
+[node04.cluster:1211741] pml_ucx.c:273  Error: Failed to create UCP worker
+[node04.cluster:1211739] pml_ucx.c:273  Error: Failed to create UCP worker
+[node05.cluster:1193107] pml_ucx.c:273  Error: Failed to create UCP worker
+[node05.cluster:1193111] pml_ucx.c:273  Error: Failed to create UCP worker
+[node05.cluster:1193103] pml_ucx.c:273  Error: Failed to create UCP worker
+[node04.cluster:1211743] pml_ucx.c:273  Error: Failed to create UCP worker
+[node04.cluster:1211748] pml_ucx.c:273  Error: Failed to create UCP worker
+node04.cluster - Child[1]: Hello
+node04.cluster - Child[2]: Hello
+node04.cluster - Child[0]: Hello
+[1689796124.023005] [node04:1211743:0]       ib_iface.c:665  UCX  ERROR ibv_create_cq(cqe=4096) failed: Operation not supported
+[1689796124.023499] [node04:1211748:0]       ib_iface.c:665  UCX  ERROR ibv_create_cq(cqe=4096) failed: Operation not supported
+[1689796124.017740] [node05:1193107:0]       ib_iface.c:665  UCX  ERROR ibv_create_cq(cqe=4096) failed: Operation not supported
+[1689796124.017740] [node05:1193111:0]       ib_iface.c:665  UCX  ERROR ibv_create_cq(cqe=4096) failed: Operation not supported
+[1689796124.017740] [node05:1193103:0]       ib_iface.c:665  UCX  ERROR ibv_create_cq(cqe=4096) failed: Operation not supported
+[1689796124.032006] [node04:1211745:0]       ib_iface.c:665  UCX  ERROR ibv_create_cq(cqe=4096) failed: Operation not supported
+node04.cluster - Child[4]: Hello
+node04.cluster - Child[3]: Hello
+[node04.cluster:1211745] pml_ucx.c:273  Error: Failed to create UCP worker
+[node05.cluster:1193112] pml_ucx.c:273  Error: Failed to create UCP worker
+node04.cluster - Child[4]: Hello
+node04.cluster - Child[0]: Hello
+node04.cluster - Child[1]: Hello
+node04.cluster - Child[2]: Hello
+node04.cluster - Child[3]: Hello
+[1689796124.020143] [node05:1193110:0]       ib_iface.c:665  UCX  ERROR ibv_create_cq(cqe=4096) failed: Operation not supported
+[node05.cluster:1193110] pml_ucx.c:273  Error: Failed to create UCP worker
+node05.cluster - Child[1]: Hello
+node05.cluster - Child[2]: Hello
+node05.cluster - Child[4]: Hello
+node05.cluster - Child[3]: Hello
+node05.cluster - Child[0]: Hello
+[1689796124.020951] [node05:1193106:0]       ib_iface.c:665  UCX  ERROR ibv_create_cq(cqe=4096) failed: Operation not supported
+[node05.cluster:1193106] pml_ucx.c:273  Error: Failed to create UCP worker
+[1689796124.025834] [node05:1193115:0]       ib_iface.c:665  UCX  ERROR ibv_create_cq(cqe=4096) failed: Operation not supported
+[node05.cluster:1193115] pml_ucx.c:273  Error: Failed to create UCP worker
+[1689796124.030939] [node05:1193108:0]       ib_iface.c:665  UCX  ERROR ibv_create_cq(cqe=4096) failed: Operation not supported
+[node05.cluster:1193108] pml_ucx.c:273  Error: Failed to create UCP worker
+node05.cluster - Child[1]: Hello
+node05.cluster - Child[4]: Hello
+node05.cluster - Child[0]: Hello
+node05.cluster - Child[2]: Hello
+node05.cluster - Child[3]: Hello
+node05.cluster - Child[1]: Calculated 3273514.833797
+node05.cluster - Child[1]: Calculated 3273514.833797
+node04.cluster - Child[1]: Calculated 3273514.833797
+node04.cluster - Child[1]: Calculated 3273514.833797
+node05.cluster - Child[3]: Calculated 3619058.054513
+node05.cluster - Child[3]: Calculated 3619058.054513
+node04.cluster - Child[3]: Calculated 3619058.054513
+node04.cluster - Child[3]: Calculated 3619058.054513
+node04.cluster - Child[2]: Calculated 3524373.145814
+node04.cluster - Child[2]: Calculated 3524373.145814
+node05.cluster - Child[2]: Calculated 3524373.145814
+node05.cluster - Child[2]: Calculated 3524373.145814
+node04.cluster - Child[4]: Calculated 3680546.566208
+
+--------------------
+node04.cluster - Child[0]: Children in this group calculated 14097492.600332 
+--------------------
+node04.cluster - Child[4]: Calculated 3680546.566208
+
+--------------------
+node04.cluster - Child[0]: Children in this group calculated 14097492.600332 
+--------------------
+node04.cluster - Child[4]: 14.000000 seconds to execute
+
+--------------------
+node04.cluster - Child[0]: 14.000000 seconds for children in this group to finish
+--------------------
+
+node04.cluster - Child[2]: 14.000000 seconds to execute
+node04.cluster - Child[1]: 13.000000 seconds to execute
+node04.cluster - Child[3]: 13.000000 seconds to execute
+node04.cluster - Child[2]: 14.000000 seconds to execute
+node04.cluster - Child[4]: 14.000000 seconds to execute
+node04.cluster - Child[1]: 13.000000 seconds to execute
+node04.cluster - Child[3]: 13.000000 seconds to execute
+
+--------------------
+node04.cluster - Child[0]: 14.000000 seconds for children in this group to finish
+--------------------
+
+node05.cluster - Child[4]: Calculated 3680546.566208
+
+--------------------
+node05.cluster - Child[0]: Children in this group calculated 14097492.600332 
+--------------------
+node05.cluster - Child[4]: 14.000000 seconds to execute
+
+--------------------
+node05.cluster - Child[0]: 14.000000 seconds for children in this group to finish
+--------------------
+
+node05.cluster - Child[1]: 13.000000 seconds to execute
+node05.cluster - Child[3]: 13.000000 seconds to execute
+node05.cluster - Child[2]: 14.000000 seconds to execute
+
+====================
+node04.cluster - Parent[1]: 15.000000 seconds for children to finish.  System Code - 0
+====================
+
+
+====================
+node04.cluster - Parent[0]: 15.000000 seconds for children to finish.  System Code - 0
+====================
+
+node05.cluster - Child[4]: Calculated 3680546.566208
+
+--------------------
+node05.cluster - Child[0]: Children in this group calculated 14097492.600332 
+--------------------
+node05.cluster - Child[4]: 14.000000 seconds to execute
+
+--------------------
+node05.cluster - Child[0]: 14.000000 seconds for children in this group to finish
+--------------------
+
+node05.cluster - Child[1]: 13.000000 seconds to execute
+node05.cluster - Child[2]: 14.000000 seconds to execute
+node05.cluster - Child[3]: 13.000000 seconds to execute
+
+====================
+node05.cluster - Parent[2]: 15.000000 seconds for children to finish.  System Code - 0
+====================
+
+
+====================
+node05.cluster - Parent[3]: 15.000000 seconds for children to finish.  System Code - 0
+====================
+

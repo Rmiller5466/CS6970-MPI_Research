@@ -1,0 +1,41 @@
+[1689796126.786189] [node02:1142502:0]       ib_iface.c:665  UCX  ERROR ibv_create_cq(cqe=4096) failed: Operation not supported
+[node02.cluster:1142502] pml_ucx.c:273  Error: Failed to create UCP worker
+node02.cluster - Parent[0]: Hello
+node02.cluster - Parent [0]: Running command: sh -c 'env -i PATH=/opt/apps/mpi/openmpi-4.0.3_gcc-8.5.0/bin/:/bin mpirun -np 5 ./Child.mpi 100000000'
+[1689796126.887607] [node02:1142514:0]       ib_iface.c:665  UCX  ERROR ibv_create_cq(cqe=4096) failed: Operation not supported
+[1689796126.887577] [node02:1142511:0]       ib_iface.c:665  UCX  ERROR ibv_create_cq(cqe=4096) failed: Operation not supported
+[1689796126.887965] [node02:1142512:0]       ib_iface.c:665  UCX  ERROR ibv_create_cq(cqe=4096) failed: Operation not supported
+[1689796126.889597] [node02:1142515:0]       ib_iface.c:665  UCX  ERROR ibv_create_cq(cqe=4096) failed: Operation not supported
+[node02.cluster:1142514] pml_ucx.c:273  Error: Failed to create UCP worker
+[node02.cluster:1142511] pml_ucx.c:273  Error: Failed to create UCP worker
+[node02.cluster:1142512] pml_ucx.c:273  Error: Failed to create UCP worker
+[node02.cluster:1142515] pml_ucx.c:273  Error: Failed to create UCP worker
+[1689796126.914032] [node02:1142517:0]       ib_iface.c:665  UCX  ERROR ibv_create_cq(cqe=4096) failed: Operation not supported
+[node02.cluster:1142517] pml_ucx.c:273  Error: Failed to create UCP worker
+node02.cluster - Child[0]: Hello
+node02.cluster - Child[4]: Hello
+node02.cluster - Child[1]: Hello
+node02.cluster - Child[3]: Hello
+node02.cluster - Child[2]: Hello
+node02.cluster - Child[1]: Calculated 3273514.833797
+node02.cluster - Child[2]: Calculated 3524373.145814
+node02.cluster - Child[3]: Calculated 3619058.054513
+node02.cluster - Child[3]: 14.000000 seconds to execute
+node02.cluster - Child[2]: 14.000000 seconds to execute
+
+--------------------
+node02.cluster - Child[0]: Children in this group calculated 14097492.600332 
+--------------------
+
+--------------------
+node02.cluster - Child[0]: 14.000000 seconds for children in this group to finish
+--------------------
+
+node02.cluster - Child[4]: Calculated 3680546.566208
+node02.cluster - Child[4]: 14.000000 seconds to execute
+node02.cluster - Child[1]: 14.000000 seconds to execute
+
+====================
+node02.cluster - Parent[0]: 14.000000 seconds for children to finish.  System Code - 0
+====================
+

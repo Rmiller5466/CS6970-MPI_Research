@@ -1,0 +1,26 @@
+node01.cluster - Parent[0]: Hello
+node01.cluster - Parent [0]: Running command: mpiexec -launcher ssh -np 5 ./Child.mpi 100000000
+node01.cluster - Child[0]: Hello
+node01.cluster - Child[3]: Hello
+node01.cluster - Child[4]: Hello
+node01.cluster - Child[1]: Hello
+node01.cluster - Child[2]: Hello
+node01.cluster - Child[1]: Calculated 3273514.833797
+node01.cluster - Child[2]: Calculated 3524373.145814
+node01.cluster - Child[3]: Calculated 3619058.054513
+node01.cluster - Child[4]: Calculated 3680546.566208
+node01.cluster - Child[1]: 14.000000 seconds to execute
+node01.cluster - Child[2]: 14.000000 seconds to execute
+node01.cluster - Child[3]: 14.000000 seconds to execute
+node01.cluster - Child[4]: 14.000000 seconds to execute
+
+--------------------
+node01.cluster - Child[0]: 14.000000 seconds for children in this group to finish
+node01.cluster - Child[0]: Children in this group calculated 14097492.600332
+--------------------
+
+
+====================
+node01.cluster - Parent[0]: 14.000000 seconds for children to finish.  System Code - 0
+====================
+

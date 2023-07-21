@@ -1,0 +1,26 @@
+node03.cluster - Parent[0]: Hello
+node03.cluster - Parent [0]: Running command: sh -c 'env -i PATH=/opt/apps/mpi/mpich-3.3.2_gcc-8.5.0/bin/:/bin mpirun -np 5 ./Child.mpi 100000000'
+node03.cluster - Child[3]: Hello
+node03.cluster - Child[0]: Hello
+node03.cluster - Child[1]: Hello
+node03.cluster - Child[2]: Hello
+node03.cluster - Child[4]: Hello
+node03.cluster - Child[1]: Calculated 3273514.833797
+node03.cluster - Child[2]: Calculated 3524373.145814
+node03.cluster - Child[3]: Calculated 3619058.054513
+node03.cluster - Child[4]: Calculated 3680546.566208
+node03.cluster - Child[1]: 14.000000 seconds to execute
+node03.cluster - Child[4]: 14.000000 seconds to execute
+
+--------------------
+node03.cluster - Child[0]: 14.000000 seconds for children in this group to finish
+node03.cluster - Child[0]: Children in this group calculated 14097492.600332
+--------------------
+
+node03.cluster - Child[2]: 14.000000 seconds to execute
+node03.cluster - Child[3]: 14.000000 seconds to execute
+
+====================
+node03.cluster - Parent[0]: 14.000000 seconds for children to finish.  System Code - 0
+====================
+

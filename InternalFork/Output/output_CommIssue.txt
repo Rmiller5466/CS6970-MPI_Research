@@ -1,0 +1,54 @@
+node04.cluster: Hello from parent process 0
+Running command: mpiexec -launcher fork -np 5 ./Child.mpi 500000000
+node05.cluster: Hello from parent process 1
+Running command: mpiexec -launcher fork -np 5 ./Child.mpi 500000000
+node05.cluster: Hello from child process 0 of 5.
+node05.cluster: Hello from child process 2 of 5.
+node05.cluster: Hello from child process 4 of 5.
+node04.cluster: Hello from child process 2 of 5.
+node04.cluster: Hello from child process 4 of 5.
+node04.cluster: Hello from child process 0 of 5.
+node05.cluster: Hello from child process 1 of 5.
+node05.cluster: Hello from child process 3 of 5.
+node04.cluster: Hello from child process 1 of 5.
+node04.cluster: Hello from child process 3 of 5.
+Child Process number: 2, Calculated number: 17545114.629512
+Child Process number: 2, Calculated number: 17545114.629512
+Child Process number: 3, Calculated number: 17980499.089329
+Child Process number: 3, Calculated number: 17980499.089329
+Child Process number: 1, Calculated number: 16391606.452047
+Child Process number: 1, Calculated number: 16391606.452047
+Fatal error in PMPI_Barrier: Unknown error class, error stack:
+PMPI_Barrier(289)...................: MPI_Barrier(comm=MPI_COMM_WORLD) failed
+PMPI_Barrier(275)...................: 
+MPIR_Barrier_impl(175)..............: 
+MPIR_Barrier_intra_auto(110)........: 
+MPIR_Barrier_intra_smp(43)..........: 
+MPIR_Barrier_impl(175)..............: 
+MPIR_Barrier_intra_auto(110)........: 
+MPIR_Barrier_intra_dissemination(49): 
+MPIDI_CH3U_Recvq_FDU_or_AEP(629)....: Communication error with rank 0
+MPIR_Barrier_intra_smp(59)..........: 
+MPIR_Bcast_impl(310)................: 
+MPIR_Bcast_intra_auto(223)..........: 
+MPIR_Bcast_intra_binomial(182)......: Failure during collective
+Fatal error in PMPI_Barrier: Unknown error class, error stack:
+PMPI_Barrier(289).............: MPI_Barrier(comm=MPI_COMM_WORLD) failed
+PMPI_Barrier(275).............: 
+MPIR_Barrier_impl(175)........: 
+MPIR_Barrier_intra_auto(110)..: 
+MPIR_Barrier_intra_smp(59)....: 
+MPIR_Bcast_impl(310)..........: 
+MPIR_Bcast_intra_auto(223)....: 
+MPIR_Bcast_intra_binomial(182): Failure during collective
+Parent Process:  70.000000 seconds for children to finish
+Command issue.. 25856
+Child Process number: 4, Calculated number: 18263238.364204
+Child Process number: 0, Calculated number: 70180458.535092
+Child Process number: 1, took 70.000000 seconds to execute
+Child Process number: 3, took 69.000000 seconds to execute
+Child Process number: 0, took 70.000000 seconds to execute
+Child Process number: 2, took 69.000000 seconds to execute
+Child Process number: 4, took 70.000000 seconds to execute
+Parent Process:  70.000000 seconds for children to finish
+Command Success!
