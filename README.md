@@ -21,19 +21,19 @@ This study was only able to be preformed on Wright State's HPC cluster, Fry, and
 
 This study found 3 potential solutions to the problem statement.  Solution 1 works for both the MPICH and Open-MPI distributions.  Solutions 2 and 3 utilize additional launch parameters provided by the Hydra process manager, and were only able to be shown working using MPICH.  These solutions may be applicable to Open-MPI, though specifics on system configuration are unknown. 
 
-Throughout testing, it was observed that the MPICH distribution of MPI did not verify that enough resources were available to spawn the desired number of children.  When attempting to spawn more children than resources available, the system would oversubscribe the available resources.  When using any of these techniques, the user must be mindful of allocated resources, otherwise issues may arise.  
-
-The Open-MPI distribution was observed to properly detect and abort the program execution when more resources were attempted to be used than available.  
+Throughout testing, it was observed that the MPICH distribution of MPI would not verify whether enough resources were available to spawn the desired number of children.  When attempting to spawn more children than resources available, the system would oversubscribe the allocated resources.  When using any of these techniques, the user must be mindful of allocated resources, otherwise issues may arise.  
 
 ### [1. Launching Children Processes With a New Shell and Cleared Environment](./ClearedShell)
 
-The first method that can be used to accomplish the desired functionality involves using a system call with an empty environment from within the parent process.  From within the parent process, a system call is made that executes the following command: 
+The first method for accomplishing the desired functionality involves using a system call with an empty environment from within the parent process. The system call executes the following command:
 
 ```C
 "sh -c 'env -i PATH=/opt/apps/mpi/mpich-3.3.2_gcc-8.5.0/bin/:/bin mpirun -np NCPUS ./Child.mpi BOUND'"
 ```
 
-In the example given, the only PATH set is to the MPI version being used, though depending on system configuration additional PATH variables may need set in addition to the MPI location.
+In the example given, the only PATH variable set is to the MPI version being used, though depending on system configuration additional PATH variables may need set in addition to the MPI location.
+
+The Open-MPI distribution was observed to properly detect and abort the program execution when using more resources than were available.  
 
 ### [2. Launching Children Processes By Changing Process Launcher](./InternalFork)
 
@@ -49,7 +49,7 @@ Fork was the only other value tested with -launcher, though using fork to launch
 
 ### [3. Built In MPI method: MPI_Comm_spawn](./MPICommSpawn)
 
-The third method found involves the "official" way to meet the goal of this project.  MPI_Comm_spawn is a built in MPI method that can be called within an MPI program that will spawn a set of children processes.  While there are methods that can interface with the set of spawned children, these were not explored due to the constraint that the source code of the children processes is not available.  The call to MPI_Comm_spawn done within the parent program is shown:
+The third method found involves the "official" way to meet the goal of this project.  MPI_Comm_spawn is a built in MPI method that will spawn a set of children processes when called from within an MPI program.  While there are methods that can interface with the set of spawned children, these were not explored due to the constraint that the source code of the children processes is not available.  The call to MPI_Comm_spawn done within the parent program is shown:
 
 ```C
 MPI_Comm_spawn(child_path, child_args, numCpus,
@@ -67,13 +67,13 @@ While this example utilizes MPICH to access the -launcher option, the official S
 
 "NOTE: OpenMPI has a limitation that does not support calls to MPI_Comm_spawn() from within a Slurm allocation. If you need to use the MPI_Comm_spawn() function you will need to use another MPI implementation combined with PMI-2 since PMIx doesn't support it either."
 
-For more technical details on the syntax of any of the preceding techniques, please refer to the provided code which includes the Slurm batch scripts for resource allocation and full Parent / Child code.  
+For more technical details on the syntax of any of the preceding techniques, please refer to the provided code which includes the Slurm batch scripts for resource allocation and full Parent / Child MPI program code.  
 
 ## Future Research
 - Does an alternative to "-launcher ssh" exist for the Open-MPI distribution?
 - How do these solutions hold up on scheduling systems that are not Slurm?
-- Is there a way simplify this problem by making changes during the initial building and configuring of MPICH, OpenMPI, or Slurm?
-- How would the use of hostfiles/machinefiles effect these solutions? 
+- Is there a way simplify this problem by making changes to the system-wide build and configuration of MPICH, OpenMPI, or Slurm?
+- How would the use of hostfiles/machinefiles affect these solutions? 
 
 ## References
 - Documentation
