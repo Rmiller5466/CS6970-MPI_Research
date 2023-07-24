@@ -1,0 +1,41 @@
+node01.cluster - Parent[0]: Hello
+node01.cluster - Parent [0]: Running command: mpiexec -launcher ssh -np 10 ./Child.mpi 100000000
+node01.cluster - Child[0]: Hello
+node01.cluster - Child[4]: Hello
+node01.cluster - Child[1]: Hello
+node01.cluster - Child[3]: Hello
+node01.cluster - Child[5]: Hello
+node01.cluster - Child[8]: Hello
+node01.cluster - Child[2]: Hello
+node01.cluster - Child[7]: Hello
+node01.cluster - Child[9]: Hello
+node01.cluster - Child[6]: Hello
+node01.cluster - Child[8]: Calculated 3818945.488853
+node01.cluster - Child[2]: Calculated 3524373.145814
+node01.cluster - Child[1]: Calculated 3273514.833797
+node01.cluster - Child[5]: Calculated 3726269.005822
+node01.cluster - Child[4]: Calculated 3680546.566208
+node01.cluster - Child[9]: Calculated 3841624.269331
+node01.cluster - Child[3]: Calculated 3619058.054513
+node01.cluster - Child[7]: Calculated 3793005.973022
+node01.cluster - Child[6]: Calculated 3762705.432558
+
+--------------------
+node01.cluster - Child[0]: 27.000000 seconds for children in this group to finish
+node01.cluster - Child[0]: Children in this group calculated 33040042.769918
+--------------------
+
+node01.cluster - Child[2]: 21.000000 seconds to execute
+node01.cluster - Child[3]: 26.000000 seconds to execute
+node01.cluster - Child[8]: 20.000000 seconds to execute
+node01.cluster - Child[1]: 22.000000 seconds to execute
+node01.cluster - Child[4]: 25.000000 seconds to execute
+node01.cluster - Child[5]: 23.000000 seconds to execute
+node01.cluster - Child[9]: 25.000000 seconds to execute
+node01.cluster - Child[6]: 27.000000 seconds to execute
+node01.cluster - Child[7]: 27.000000 seconds to execute
+
+====================
+node01.cluster - Parent[0]: 34.000000 seconds for children to finish.  System Code - 0
+====================
+
